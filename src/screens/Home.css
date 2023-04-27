@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(4, 36, 64);
+    background: linear-gradient(0deg,
+            rgba(4, 36, 64, 1) 0%,
+            rgba(11, 127, 140, 1) 35%,
+            rgba(27, 242, 242, 1) 100%);
+    color: #fff;
+    text-align: center;
+    padding: 10vw;
+    height: 100vh;
+}
+
+.banner-logo {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.banner-logo img {
+    width: 10vw;
+}
+
+.banner-content {
+    max-width: 90vw;
+    margin: 0 auto;
+}
+
+.banner h2 {
+    font-size: 6vw;
+    margin-top: 0;
+}
+
+.banner p {
+    font-size: 3vw;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin-top: 5vw;
+    text-align: center;
+}
+
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    padding: 2vw;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    width: 50vw;
+}
+
+button {
+    width: 25vw;
+    background-color: #fff;
+    color: #0b7f8c;
+    padding: 2vw 4vw;
+    border: none;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #1e1e1e;
+    color: #fff;
+}
+
+.enviado {
+    cursor: default;
+    background-color: #1e1e1e;
+    color: #fff;
+}
+
+/* Media queries */
+@media (min-width: 768px) {
+    .banner {
+        padding: 5vw;
+    }
+
+    .banner-content {
+        max-width: 60vw;
+    }
+
+    .banner h2 {
+        font-size: 3vw;
+    }
+
+    .banner p {
+        font-size: 2vw;
+    }
+
+    label {
+        margin-top: 2vw;
+        margin-bottom: 1vw;
+    }
+
+    input {
+        padding: 1vw;
+        border-radius: 2vw 0 0 2vw;
+        width: 40vw;
+    }
+    
+    button {
+        width: 20vw;
+        padding: 1vw 2vw;
+        border-radius: 0 2vw 2vw 0;
+    }
+}
